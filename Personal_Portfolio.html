@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaran Patel | Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #0d6efd; --dark-bg: #121212; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        
+        /* Navbar Styling */
+        .navbar { background: rgba(0, 0, 0, 0.9) !important; backdrop-filter: blur(10px); }
+        
+        /* Carousel Hero Styling */
+        .carousel-item { height: 80vh; min-height: 400px; background: no-repeat center center scroll; background-size: cover; }
+        .carousel-caption { bottom: 30%; background: rgba(0,0,0,0.6); padding: 30px; border-radius: 15px; }
+        .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.5); }
+
+        /* Card & Section Styling */
+        section { padding: 100px 0; }
+        .card { transition: all 0.3s ease; border: none; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+        .skill-badge { background: #0d6efd; color: white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin: 5px; font-size: 0.9rem; font-weight: 500; }
+        
+        /* Form Styling */
+        .contact-section { background: var(--dark-bg); color: white; border-radius: 20px; padding: 50px; }
+        .form-control { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; }
+        .form-control:focus { background: rgba(255,255,255,0.2); color: white; border-color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">AARAN PATEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072');">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-2 fw-bold">Aaran Patel</h1>
+                    <p class="lead text-uppercase tracking-wider">MCA Student & Full Stack Web Developer</p>
+                    <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070');">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-2 fw-bold">Skilled in JavaScript & Python</h1>
+                    <p class="lead">Building responsive and functional web applications.</p>
+                    <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h6 class="text-primary fw-bold text-uppercase">Who Am I?</h6>
+                <h2 class="display-5 fw-bold mb-4">I'm an MCA student passionate about Full Stack Development.</h2>
+                <p class="text-muted mb-4">I have hands-on experience building responsive web applications. I'm comfortable working with both MySQL and MongoDB databases[cite: 6]. I am a quick learner looking for opportunities to contribute to real-world projects in a fast-paced environment[cite: 6, 7].</p>
+                <p class="fw-bold">Contact: +7096354504 </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5 bg-white shadow rounded-4">
+                    <h4 class="fw-bold mb-4">Technical Expertise</h4>
+                    <div class="mb-3">
+                        <small class="fw-bold">JavaScript / React</small>
+                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <small class="fw-bold">Python / OOPS</small>
+                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar bg-success" style="width: 80%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <small class="fw-bold">SQL / MongoDB</small>
+                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar bg-warning" style="width: 75%"></div></div>
+                    </div>
+                    <div class="mt-4">
+                        <span class="skill-badge">HTML/CSS [cite: 17]</span>
+                        <span class="skill-badge">GIT [cite: 20]</span>
+                        <span class="skill-badge">BOOTSTRAP [cite: 15]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light">
+        <div class="container text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">My Portfolio</h6>
+            <h2 class="display-5 fw-bold">Recent Academic Projects</h2>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary"><i class="bi bi-laptop fs-1"></i></div>
+                            <h4 class="card-title fw-bold">Sports Inventory Management </h4>
+                            <p class="card-text">Main objective is to maintain accurate stock records and manage equipment issuance[cite: 10].</p>
+                            <p class="small text-muted mb-4">Built with: PHP, HTML, CSS, BOOTSTRAP [cite: 15]</p>
+                            <span class="badge bg-dark px-3 py-2">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-success"><i class="bi bi-capsule fs-1"></i></div>
+                            <h4 class="card-title fw-bold">Online Medical Store </h4>
+                            <p class="card-text">An automated system designed to manage medicine inventory, handle billing, and track sales efficiently[cite: 14].</p>
+                            <p class="small text-muted mb-4">Developed as part of the BCA curriculum[cite: 13].</p>
+                            <span class="badge bg-dark px-3 py-2">BCA Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">Educational Journey</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-primary border-5">
+                    <h5 class="fw-bold">Masters in Computer Science (MCA) </h5>
+                    <p class="text-primary mb-0">Veer Narmad South Gujarat University </p>
+                </div>
+                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-secondary border-5">
+                    <h5 class="fw-bold">Bachelor In Computer Application (BCA) [cite: 27]</h5>
+                    <p class="text-secondary mb-0">S.S.Agrawal, Navsari [cite: 27]</p>
+                </div>
+                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-dark border-5">
+                    <h5 class="fw-bold">SSC & HSC (Commerce) [cite: 26]</h5>
+                    <p class="text-dark mb-0">Central Board Of Secondary Education [cite: 26]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact-section">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="display-6 fw-bold mb-4">Let's Connect</h2>
+                    <p>I'm looking for opportunities to grow technical skills and contribute to real-world projects[cite: 7].</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-2"><strong>Email:</strong> aaranpatel2904@gmail.com </li>
+                        <li class="mb-2"><strong>Phone:</strong> +7096354504 </li>
+                        <li><strong>Location:</strong> NAVSARI, GUJARAT </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form action="https://formspree.io/f/xbdlnlnr" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="name" class="form-control p-3" placeholder="Aaran Patel" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" name="email" class="form-control p-3" placeholder="name@email.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea name="message" class="form-control p-3" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <input type="hidden" name="_subject" value="New Portfolio Message!">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3">Send My Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p class="mb-0">&copy; 2026 Aaran Patel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
