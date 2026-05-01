@@ -4,201 +4,405 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaran Patel | Full Stack Developer Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --primary-color: #0d6efd; --dark-bg: #121212; }
-        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
-        
-        /* Navbar Styling */
-        .navbar { background: rgba(0, 0, 0, 0.9) !important; backdrop-filter: blur(10px); }
-        
-        /* Carousel Hero Styling */
-        .carousel-item { height: 80vh; min-height: 400px; background: no-repeat center center scroll; background-size: cover; }
-        .carousel-caption { bottom: 30%; background: rgba(0,0,0,0.6); padding: 30px; border-radius: 15px; }
-        .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.5); }
-
-        /* Card & Section Styling */
-        section { padding: 100px 0; }
-        .card { transition: all 0.3s ease; border: none; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
-        .skill-badge { background: #0d6efd; color: white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin: 5px; font-size: 0.9rem; font-weight: 500; }
-        
-        /* Form Styling */
-        .contact-section { background: var(--dark-bg); color: white; border-radius: 20px; padding: 50px; }
-        .form-control { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; }
-        .form-control:focus { background: rgba(255,255,255,0.2); color: white; border-color: var(--primary-color); }
-    </style>
+    <meta name="description" content="Portfolio of Aaran Patel, MCA student and full stack developer building responsive web applications with React, Node.js, Express, MongoDB, and SQL.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="90" tabindex="0">
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">AARAN PATEL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072');">
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                    <h1 class="display-2 fw-bold">Aaran Patel</h1>
-                    <p class="lead text-uppercase tracking-wider">MCA Student & Full Stack Web Developer</p>
-                    <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070');">
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                    <h1 class="display-2 fw-bold">Skilled in React and basic Webdevelopment</h1>
-                    <p class="lead">Building responsive and functional web applications.</p>
-                    <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Hire Me</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="about" class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h6 class="text-primary fw-bold text-uppercase">Who Am I?</h6>
-                <h2 class="display-5 fw-bold mb-4">I'm an MCA student passionate about Full Stack Development.</h2>
-                <p class="text-muted mb-4">I have hands-on experience building responsive web applications. I'm comfortable working with both MySQL and MongoDB databases[cite: 6]. I am a quick learner looking for opportunities to contribute to real-world projects in a fast-paced environment[cite: 6, 7].</p>
-                <p class="fw-bold">Contact: +7096354504 </p>
-            </div>
-            <div class="col-lg-6">
-                <div class="p-5 bg-white shadow rounded-4">
-                    <h4 class="fw-bold mb-4">Technical Expertise</h4>
-                    <div class="mb-3">
-                        <small class="fw-bold">JavaScript / React</small>
-                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar" style="width: 85%"></div></div>
-                    </div>
-                    <div class="mb-3">
-                        <small class="fw-bold">Python / OOPS</small>
-                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar bg-success" style="width: 80%"></div></div>
-                    </div>
-                    <div class="mb-3">
-                        <small class="fw-bold">SQL / MongoDB</small>
-                        <div class="progress mt-2" style="height: 7px;"><div class="progress-bar bg-warning" style="width: 75%"></div></div>
-                    </div>
-                    <div class="mt-4">
-                        <span class="skill-badge">HTML/CSS [cite: 17]</span>
-                        <span class="skill-badge">GIT [cite: 20]</span>
-                        <span class="skill-badge">BOOTSTRAP [cite: 15]</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="bg-light">
-        <div class="container text-center mb-5">
-            <h6 class="text-primary fw-bold text-uppercase">My Portfolio</h6>
-            <h2 class="display-5 fw-bold">Recent Academic Projects</h2>
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-primary"><i class="bi bi-laptop fs-1"></i></div>
-                            <h4 class="card-title fw-bold">Sports Inventory Management </h4>
-                            <p class="card-text">Main objective is to maintain accurate stock records and manage equipment issuance[cite: 10].</p>
-                            <p class="small text-muted mb-4">Built with: PHP, HTML, CSS, BOOTSTRAP [cite: 15]</p>
-                            <span class="badge bg-dark px-3 py-2">Full Stack</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-success"><i class="bi bi-capsule fs-1"></i></div>
-                            <h4 class="card-title fw-bold">Online Medical Store </h4>
-                            <p class="card-text">An automated system designed to manage medicine inventory, handle billing, and track sales efficiently[cite: 14].</p>
-                            <p class="small text-muted mb-4">Developed as part of the BCA curriculum[cite: 13].</p>
-                            <span class="badge bg-dark px-3 py-2">BCA Project</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="container">
-        <h2 class="text-center display-5 fw-bold mb-5">Educational Journey</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-primary border-5">
-                    <h5 class="fw-bold">Masters in Computer Science (MCA) </h5>
-                    <p class="text-primary mb-0">Veer Narmad South Gujarat University </p>
-                </div>
-                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-secondary border-5">
-                    <h5 class="fw-bold">Bachelor In Computer Application (BCA) [cite: 27]</h5>
-                    <p class="text-secondary mb-0">S.S.Agrawal, Navsari [cite: 27]</p>
-                </div>
-                <div class="mb-4 p-4 bg-white shadow-sm rounded-3 border-start border-dark border-5">
-                    <h5 class="fw-bold">SSC & HSC (Commerce) [cite: 26]</h5>
-                    <p class="text-dark mb-0">Central Board Of Secondary Education [cite: 26]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <div class="contact-section">
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <h2 class="display-6 fw-bold mb-4">Let's Connect</h2>
-                    <p>I'm looking for opportunities to grow technical skills and contribute to real-world projects[cite: 7].</p>
-                    <ul class="list-unstyled mt-4">
-                        <li class="mb-2"><strong>Email:</strong> aaranpatel2904@gmail.com </li>
-                        <li class="mb-2"><strong>Phone:</strong> +7096354504 </li>
-                        <li><strong>Location:</strong> NAVSARI, GUJARAT </li>
+    <div class="site-shell">
+        <nav class="navbar navbar-expand-lg fixed-top" id="siteNavbar">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-mark">AP</span>
+                    <span class="brand-text">Aaran Patel</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-nav" href="#contact">Let's Talk</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-7">
-                    <form action="https://formspree.io/f/xbdlnlnr" method="POST">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label">Full Name</label>
-                                <input type="text" name="name" class="form-control p-3" placeholder="Aaran Patel" required>
+            </div>
+        </nav>
+
+        <header id="home" class="hero-section">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators custom-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section class="hero-slide hero-slide-one">
+                            <div class="hero-glow hero-glow-left"></div>
+                            <div class="hero-glow hero-glow-right"></div>
+                            <div class="container">
+                                <div class="row align-items-center gy-5">
+                                    <div class="col-lg-7">
+                                        <span class="eyebrow">MCA Student • Full Stack Developer</span>
+                                        <h1 class="hero-title">Designing polished web experiences with practical full stack thinking.</h1>
+                                        <p class="hero-copy">I build responsive, user-focused applications with a strong foundation in React, Node.js, databases, and modern web interfaces.</p>
+                                        <div class="hero-actions">
+                                            <a href="#projects" class="btn btn-accent btn-lg">Explore Projects</a>
+                                            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="hero-panel floating-card">
+                                            <div class="hero-panel-top">
+                                                <span class="panel-dot"></span>
+                                                <span class="panel-dot"></span>
+                                                <span class="panel-dot"></span>
+                                            </div>
+                                            <div class="hero-panel-body">
+                                                <p class="panel-label">Current Focus</p>
+                                                <h3>Modern, scalable web applications</h3>
+                                                <ul class="hero-list">
+                                                    <li>Responsive UI with strong visual clarity</li>
+                                                    <li>Structured backend flows and clean APIs</li>
+                                                    <li>Database-backed systems for real use cases</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Email Address</label>
-                                <input type="email" name="email" class="form-control p-3" placeholder="name@email.com" required>
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="hero-slide hero-slide-two">
+                            <div class="container">
+                                <div class="row align-items-center gy-5">
+                                    <div class="col-lg-6">
+                                        <span class="eyebrow">Frontend to Backend</span>
+                                        <h2 class="hero-title">Building complete solutions, not just isolated screens.</h2>
+                                        <p class="hero-copy">From interfaces to data handling, I enjoy turning academic and practical ideas into dependable products that feel fast and intuitive.</p>
+                                        <div class="hero-actions">
+                                            <a href="#about" class="btn btn-accent btn-lg">See Skills</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="metrics-grid">
+                                            <article class="metric-card floating-card">
+                                                <span class="metric-icon"><i class="bi bi-window-stack"></i></span>
+                                                <h3>React & JavaScript</h3>
+                                                <p>Interactive UI development with component-driven thinking.</p>
+                                            </article>
+                                            <article class="metric-card floating-card">
+                                                <span class="metric-icon"><i class="bi bi-hdd-network"></i></span>
+                                                <h3>Node & Express</h3>
+                                                <p>Server-side logic and application flows for real projects.</p>
+                                            </article>
+                                            <article class="metric-card floating-card">
+                                                <span class="metric-icon"><i class="bi bi-database-check"></i></span>
+                                                <h3>MySQL & MongoDB</h3>
+                                                <p>Structured and document-based data handling experience.</p>
+                                            </article>
+                                            <article class="metric-card floating-card">
+                                                <span class="metric-icon"><i class="bi bi-braces-asterisk"></i></span>
+                                                <h3>HTML, CSS, Bootstrap</h3>
+                                                <p>Responsive layouts with detail-oriented visual polish.</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12">
-                                <label class="form-label">Message</label>
-                                <textarea name="message" class="form-control p-3" rows="4" placeholder="How can I help you?" required></textarea>
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="hero-slide hero-slide-three">
+                            <div class="container">
+                                <div class="row align-items-center gy-5">
+                                    <div class="col-lg-7">
+                                        <span class="eyebrow">Available for Opportunities</span>
+                                        <h2 class="hero-title">Ready to contribute, learn fast, and create strong outcomes with a team.</h2>
+                                        <p class="hero-copy">I am looking for opportunities where I can keep improving technically while helping deliver meaningful software and better user experiences.</p>
+                                        <div class="hero-actions">
+                                            <a href="mailto:aaranpatel2904@gmail.com" class="btn btn-accent btn-lg">Email Me</a>
+                                            <a href="tel:7096354504" class="btn btn-outline-light btn-lg">Call Me</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="availability-card floating-card">
+                                            <div class="availability-row">
+                                                <span>Location</span>
+                                                <strong>Navsari, Gujarat</strong>
+                                            </div>
+                                            <div class="availability-row">
+                                                <span>Education</span>
+                                                <strong>MCA</strong>
+                                            </div>
+                                            <div class="availability-row">
+                                                <span>Interest Areas</span>
+                                                <strong>Full Stack, UI, Databases</strong>
+                                            </div>
+                                            <div class="availability-row">
+                                                <span>Contact</span>
+                                                <strong>+7096354504</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <input type="hidden" name="_subject" value="New Portfolio Message!">
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary btn-lg w-100 py-3">Send My Message</button>
+                        </section>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev custom-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next custom-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" class="section-padding">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 reveal">
+                            <span class="section-tag">About Me</span>
+                            <h2 class="section-title">A motivated developer with an eye for clean experiences and practical systems.</h2>
+                            <p class="section-copy">I am an MCA student passionate about full stack development and responsive web applications. I enjoy working across frontend interfaces, backend logic, and database systems to build software that is both useful and easy to use.</p>
+                            <p class="section-copy">I am comfortable with React, JavaScript, Node.js, Express, MySQL, MongoDB, HTML, CSS, Bootstrap, Python, and Git. I am also a quick learner who enjoys contributing to real-world projects in collaborative environments.</p>
+                            <div class="about-contact">
+                                <a href="mailto:aaranpatel2904@gmail.com" class="contact-pill"><i class="bi bi-envelope"></i>aaranpatel2904@gmail.com</a>
+                                <a href="tel:7096354504" class="contact-pill"><i class="bi bi-telephone"></i>+7096354504</a>
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-6 reveal">
+                            <div class="profile-surface">
+                                <div class="skill-block">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>JavaScript / React</span>
+                                        <strong>85%</strong>
+                                    </div>
+                                    <div class="progress modern-progress" role="progressbar" aria-label="JavaScript and React skill" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar gradient-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-block">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Python / OOP</span>
+                                        <strong>80%</strong>
+                                    </div>
+                                    <div class="progress modern-progress" role="progressbar" aria-label="Python and OOP skill" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar gradient-bar second-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-block">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>SQL / MongoDB</span>
+                                        <strong>75%</strong>
+                                    </div>
+                                    <div class="progress modern-progress" role="progressbar" aria-label="SQL and MongoDB skill" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar gradient-bar third-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="badge-cluster">
+                                    <span class="skill-chip">React.js</span>
+                                    <span class="skill-chip">Node.js</span>
+                                    <span class="skill-chip">Express</span>
+                                    <span class="skill-chip">MongoDB</span>
+                                    <span class="skill-chip">MySQL</span>
+                                    <span class="skill-chip">HTML</span>
+                                    <span class="skill-chip">CSS</span>
+                                    <span class="skill-chip">Bootstrap</span>
+                                    <span class="skill-chip">Git</span>
+                                    <span class="skill-chip">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <section id="projects" class="section-padding section-projects">
+                <div class="container">
+                    <div class="section-heading text-center reveal">
+                        <span class="section-tag">Featured Work</span>
+                        <h2 class="section-title">Recent academic projects with practical problem-solving focus.</h2>
+                        <p class="section-copy mx-auto">These projects reflect my interest in building useful digital systems, improving workflows, and creating responsive web experiences.</p>
+                    </div>
+
+                    <div class="row g-4 project-grid">
+                        <div class="col-lg-4 col-md-6 reveal">
+                            <article class="project-card h-100">
+                                <div class="project-icon icon-blue">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="project-body">
+                                    <div class="project-meta">Academic Project</div>
+                                    <h3>Sports Inventory Management</h3>
+                                    <p>Main objective was to maintain accurate stock records and manage sports equipment issuance in a streamlined way.</p>
+                                    <div class="tag-row">
+                                        <span>PHP</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 reveal">
+                            <article class="project-card h-100">
+                                <div class="project-icon icon-green">
+                                    <i class="bi bi-capsule-pill"></i>
+                                </div>
+                                <div class="project-body">
+                                    <div class="project-meta">BCA Project</div>
+                                    <h3>Online Medical Store</h3>
+                                    <p>An automated system designed to manage medicine inventory, handle billing, and track sales efficiently.</p>
+                                    <div class="tag-row">
+                                        <span>Inventory</span>
+                                        <span>Billing</span>
+                                        <span>Sales Tracking</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 reveal">
+                            <article class="project-card project-featured h-100">
+                                <div class="project-icon icon-amber">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+                                <div class="project-body">
+                                    <div class="project-meta">MCA Project</div>
+                                    <h3>Automatic Patent Form Generation</h3>
+                                    <p>Built a web-based application for automatic patent form generation, reducing manual effort through dynamic form handling and structured document output.</p>
+                                    <p>Enhanced productivity by optimizing the form-filling and document-generation workflow for faster, more consistent results.</p>
+                                    <div class="tag-row">
+                                        <span>React.js</span>
+                                        <span>Node.js</span>
+                                        <span>Express</span>
+                                        <span>MongoDB</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section-padding">
+                <div class="container">
+                    <div class="section-heading text-center reveal">
+                        <span class="section-tag">Education</span>
+                        <h2 class="section-title">My academic journey in technology and commerce.</h2>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-card reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">Current</span>
+                                <h3>Masters in Computer Science (MCA)</h3>
+                                <p>Veer Narmad South Gujarat University</p>
+                            </div>
+                        </article>
+                        <article class="timeline-card reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">Graduation</span>
+                                <h3>Bachelor in Computer Application (BCA)</h3>
+                                <p>S.S. Agrawal, Navsari</p>
+                            </div>
+                        </article>
+                        <article class="timeline-card reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">Foundation</span>
+                                <h3>SSC & HSC (Commerce)</h3>
+                                <p>Central Board of Secondary Education</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-padding">
+                <div class="container">
+                    <div class="contact-wrapper reveal">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-5">
+                                <span class="section-tag section-tag-light">Contact</span>
+                                <h2 class="section-title text-white">Let’s build something meaningful together.</h2>
+                                <p class="section-copy contact-copy">I am looking for opportunities to grow technically, contribute to real-world projects, and collaborate with teams building useful products.</p>
+                                <div class="contact-card-list">
+                                    <a href="mailto:aaranpatel2904@gmail.com" class="contact-card-item">
+                                        <i class="bi bi-envelope-paper"></i>
+                                        <span>aaranpatel2904@gmail.com</span>
+                                    </a>
+                                    <a href="tel:7096354504" class="contact-card-item">
+                                        <i class="bi bi-telephone-forward"></i>
+                                        <span>+7096354504</span>
+                                    </a>
+                                    <div class="contact-card-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>Navsari, Gujarat</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <form class="contact-form" action="https://formspree.io/f/xbdlnlnr" method="POST">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="name" class="form-label">Full Name</label>
+                                            <input id="name" type="text" name="name" class="form-control form-control-lg" placeholder="Aaran Patel" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input id="email" type="email" name="email" class="form-control form-control-lg" placeholder="name@email.com" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea id="message" name="message" class="form-control form-control-lg" rows="5" placeholder="Tell me about your idea or opportunity." required></textarea>
+                                        </div>
+                                        <input type="hidden" name="_subject" value="New Portfolio Message!">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-accent btn-lg w-100">Send My Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="mb-0">© <span id="currentYear">2026</span> Aaran Patel. All rights reserved.</p>
+                <a href="#home" class="footer-link">Back to top <i class="bi bi-arrow-up-right"></i></a>
             </div>
-        </div>
-    </section>
+        </footer>
+    </div>
 
-    <footer class="text-center py-4 bg-dark text-white">
-        <p class="mb-0">&copy; 2026 Aaran Patel. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
